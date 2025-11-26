@@ -1,0 +1,98 @@
+/* src/index.css */
+@import "tailwindcss";
+
+/* primary color #78c841 */
+
+/* ===== FONT FACE SETUP ===== */
+@font-face {
+  font-family: "jakarta-bold";
+  src: url(assets/font/PlusJakartaSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: "jakarta-bold-italic";
+  src: url(assets/font/PlusJakartaSans-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "jakarta-Extrabold";
+  src: url(assets/font/PlusJakartaSans-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "jakarta-ExtraLight";
+  src: url(assets/font/PlusJakartaSans-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "jakarta-medium";
+  src: url(assets/font/PlusJakartaSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: "jakarta-medium-italic";
+  src: url(assets/font/PlusJakartaSans-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: "jakarta-Regular";
+  src: url(assets/font/PlusJakartaSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "jakarta-Semibold";
+  src: url(assets/font/PlusJakartaSans-SemiBold.ttf);
+}
+/* Yanone Kaffeesatz */
+@font-face {
+  font-family: "Yanone-Semibold";
+  src: url(assets/font/YanoneKaffeesatz-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Yanone-medium";
+  src: url(assets/font/YanoneKaffeesatz-Medium.ttf)
+}
+@font-face {
+  font-family: "Yanone-Regular";
+  src: url(assets/font/YanoneKaffeesatz-Regular.ttf)
+}
+/* ===== GLOBAL RESET ===== */
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "jakarta-Regular", sans-serif;
+    
+
+  }
+}
+  /* font-family: "Yanone Kaffeesatz", sans-serif; */
+/* ===== EXTRA COMPONENT STYLES (OPTIONAL) ===== */
+@layer components {
+  /* custom class use */
+
+}
+
+/* ===== THEME VARIABLES (TAILWIND v4) ===== */
+@theme {
+  /* Colors */
+  --color-primary: #78c841;
+  --color-secondary: #4fa317ff;
+  --color-Light_primary: #e2fad17c;
+  /* Jakarta Font Variables */
+  --font-jakarta-bold: "jakarta-bold", sans-serif;
+  --font-jakarta-bold-italic: "jakarta-bold-italic", sans-serif;
+  --font-jakarta-Extrabold: "jakarta-Extrabold", sans-serif;
+  --font-jakarta-ExtraLight: "jakarta-ExtraLight", sans-serif;
+  --font-jakarta-medium: "jakarta-medium", sans-serif;
+  --font-jakarta-medium-italic: "jakarta-medium-italic", sans-serif;
+  --font-jakarta-Regular: "jakarta-Regular", sans-serif;
+  --font-jakarta-Semibold: "jakarta-Semibold", sans-serif;
+  --font-Yanone-Semibold: "Yanone-Semibold", sans-serif;
+  --font-Yanone-medium: "Yanone-medium", sans-serif;
+  --font-Yanone-Regular: "Yanone-Regular", sans-serif;
+}
