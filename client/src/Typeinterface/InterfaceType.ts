@@ -46,3 +46,13 @@ export interface ExperienceItem {
   title: string;
   percentage: number;
 }
+
+// Services specialization data
+export interface techologyItem {
+  images: string;
+}
+export interface SpecializationItem {
+  logo?:techologyItem[];
+  slug:string;
+  title:string;
+}

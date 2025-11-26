@@ -1,7 +1,11 @@
 
-import type { ExperienceItem, HomeBannerData, menuInterface, SidebarBanner, SidebarBannerIcon } from "../../Typeinterface/InterfaceType";
+import type { ExperienceItem, HomeBannerData, menuInterface, SidebarBanner, SidebarBannerIcon, SpecializationItem } from "../../Typeinterface/InterfaceType";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-import myimage from '../../assets/images/rohan.png'
+import myimage from '../../assets/images/rohan.webp';
+import react from '../../assets/images/react-logo.webp';
+import nextjs from '../../assets/images/nextjs-logo.webp';
+import js from '../../assets/images/js-logo.webp';
+import redux from '../../assets/images/redux-logo.webp';
 
 // nav bar 
 export const navBar: menuInterface[] = [
@@ -62,7 +66,7 @@ export const homeBannerData: HomeBannerData = {
 };
 
 
-// experience 
+// experience about us
 export const experienceData: ExperienceItem[] = [
     { title: "HTML", percentage: 95 },
     { title: "CSS", percentage: 90 },
@@ -71,3 +75,16 @@ export const experienceData: ExperienceItem[] = [
     { title: "Next.js", percentage: 75 },
     { title: "MERN Stack", percentage: 70 },
 ];
+
+
+//  specialization services offer 
+export const specializationData: SpecializationItem = {
+    logo: [
+        { images: react },
+        { images: nextjs },
+        { images: js },
+        { images: redux},
+    ],
+    slug: "specialization",
+    title: "Services Offer"
+}

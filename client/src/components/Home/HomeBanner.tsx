@@ -1,20 +1,28 @@
 import React from 'react'
 import type { HomeBannerData } from '../../Typeinterface/InterfaceType'
 import BannerHeading from './Bannercomponents/BannerHeading'
-import Experience from './Bannercomponents/Experience'
+import SpecializationLogo from './Bannercomponents/SpecializationLogo'
+import { specializationData } from '../../constants/Data/data'
+
+
 type props = {
   data: HomeBannerData
 }
 const Banner: React.FC<props> = ({ data }) => {
   const { entryName, title, description, skillTags } = data;
   return (
-    <div >
+    <div className="w-full flex flex-col gap-5">
       <BannerHeading entryName={entryName} title={title} description={description} skillTags={skillTags} />
-      <div className='grid grid-cols-12'>
-        <div className='col-span-4 mt-8'>
-          <Experience />
+      <div className="grid grid-cols-12 gap-2">
+        <div className="col-span-4">
+
+          <SpecializationLogo data={specializationData} />
         </div>
       </div>
+
+
+
+
     </div>
   )
 }
