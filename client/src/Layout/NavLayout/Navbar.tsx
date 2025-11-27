@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { HiMenu, HiX } from 'react-icons/hi' // react-icons
+
 import whitelogo from "/lightlogo.png"
 import { navBar } from '../../constants/Data/data'
 import { Link, useLocation } from 'react-router-dom'
@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Menu */}
         <div className="col-span-8 hidden md:flex justify-center  ">
-          <ul className="flex justify-center gap-2 md:gap-5 w-full">
+          <ul className="flex justify-center gap-2 md:gap-0 w-full">
             {navBar.map((item, idx) => {
               const isActive = item.href === pathName
               const isHover = hoveredIdx === idx
@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
         <div
           className={`
     col-span-12 md:hidden 
-    flex flex-col gap-3 bg-gradient-to-r from-primary via-lime-600 to-secondary backdrop-blur-xs px-5 py-5 absolute top-20 right-0 w-full
+    flex flex-col gap-3 bg-linear-to-r from-primary via-lime-600 to-secondary backdrop-blur-xs px-5 py-5 absolute top-20 right-0 w-full
     transform transition-all duration-300 origin-top-right z-50
     ${menuOpen ? 'scale-100 opacity-100' : 'scale-0 '}
   `}

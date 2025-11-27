@@ -13,7 +13,7 @@ const HomeSidebar: React.FC<props> = ({ data }) => {
     const { image, entryName, name, slug, email, phone, icons } = data;
 
     return (
-        <div className="relative shadow-xl rounded-3xl p-4 group ring-Light_primary ring-2">
+        <div className="relative shadow-lg rounded-3xl p-4 group ring-Light_primary ring-2">
             <div className="absolute top-2 left-2 w-[calc(100%-16px)] h-[calc(45%-16px)] rounded-t-3xl bg-linear-to-r from-primary via-lime-600 to-secondary -z-10"></div>
 
             <img

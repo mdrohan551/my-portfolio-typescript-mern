@@ -1,18 +1,24 @@
 
-import type { ExperienceItem, HomeBannerData, menuInterface, SidebarBanner, SidebarBannerIcon, SpecializationItem } from "../../Typeinterface/InterfaceType";
+import type { ExperienceItem, HomeBannerData, menuInterface, ProjectMokcupImages, SidebarBanner, SidebarBannerIcon, SpecializationItem, TestimonialLink, TestimonialMockupData } from "../../Typeinterface/InterfaceType";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-import myimage from '../../assets/images/rohan.webp';
-import react from '../../assets/images/react-logo.webp';
-import nextjs from '../../assets/images/nextjs-logo.webp';
-import js from '../../assets/images/js-logo.webp';
-import redux from '../../assets/images/redux-logo.webp';
-
+import myimage from '/images/rohan.webp';
+import react from '/images/react-logo.webp';
+import nextjs from '/images/nextjs-logo.webp';
+import js from '/images/js-logo.webp';
+import redux from '/images/redux-logo.webp';
+// project mokcup images
+import mokcup1 from '/images/Website-Design-Mockup.jpg';
+import mokcup2 from '/images/website_mockup.jpg';
+import mokcup3 from '/images/website_mockup2jpg.jpg';
+// testimonialMockupData
+import testimonialImg from '/images/testimonialcover.png'
 // nav bar 
 export const navBar: menuInterface[] = [
     { title: "home", href: "/" },
     { title: "project", href: "/project" },
     { title: "services", href: "/services" },
-    { title: "about us", href: "/Blog" },
+    { title: "about us", href: "/about" },
+    { title: "Blog", href: "/blog" },
     { title: "faq", href: "/faq" },
 ]
 
@@ -83,8 +89,44 @@ export const specializationData: SpecializationItem = {
         { images: react },
         { images: nextjs },
         { images: js },
-        { images: redux},
+        { images: redux },
     ],
     slug: "specialization",
     title: "Services Offer"
 }
+
+
+// project mokcup images data
+export const projectMokcupImagesData: ProjectMokcupImages = {
+    images: [mokcup1, mokcup2, mokcup3],
+    slug: "showcase view",
+    title: "Projects"
+
+}
+
+// what client say testimonial mockup
+export const testimonialMockupData:TestimonialMockupData = {
+    image: testimonialImg,
+    slug: "What Client Say?",
+    title: "testimonials"
+}
+
+// Example: src/constants/Data/data.ts
+export const testimonialLinks:TestimonialLink[] = [
+    {
+        to: "/blog",
+        smallText: "visit our blog",
+        largeText: "blog",
+        bg: "bg-gray-900",
+        textColor: "text-white",
+        icon: null, // যদি icon না থাকে
+    },
+    {
+        to: "/contact-us",
+        smallText: "Let's work",
+        largeText: "contact",
+        bg: "bg-primary",
+        textColor: "text-white",
+        icon: true, // icon দেখাতে চাইলে
+    },
+];

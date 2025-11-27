@@ -52,7 +52,30 @@ export interface techologyItem {
   images: string;
 }
 export interface SpecializationItem {
-  logo?:techologyItem[];
-  slug:string;
-  title:string;
+  logo?: techologyItem[];
+  slug: string;
+  title: string;
+}
+
+
+// project mokcup images data 
+export interface ProjectMokcupImages {
+  images: string[];
+  slug: string;
+  title: string;
+}
+
+// testimonial mockup data
+export interface TestimonialMockupData {
+  image: string;
+  slug: string;
+  title: string;
+}
+export interface TestimonialLink {
+  to: string;
+  bg: string;
+  textColor: string;
+  smallText: string;
+  largeText: string;
+  icon?: React.ComponentType | boolean | null;
 }
