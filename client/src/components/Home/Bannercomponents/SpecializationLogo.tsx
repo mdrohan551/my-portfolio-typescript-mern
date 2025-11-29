@@ -16,9 +16,16 @@ const SpecializationLogo: React.FC<Props> = ({ data }) => {
                         </div>
                     </div>
                 ))}
-                <div className='col-span-6'>
-                    <span className='text-sm text-gray-500 '>{data?.slug}</span>
-                    <h3 className='text-xl text-secondary font-Yanone-Semibold uppercase tracking-[0.2rem]'>{data?.title}</h3>
+                <div className='grid grid-cols-12 col-span-12 '>
+                    <div className='col-span-6'>
+                        <span className='text-sm text-gray-500 '>{data?.slug}</span>
+                        <h3 className='text-xl text-secondary font-Yanone-Semibold uppercase tracking-[0.2rem]'>{data?.title}</h3>
+                    </div>
+                    <div className='col-span-6 flex flex-col items-end justify-center'>
+                        <span className='text-sm text-gray-500 '>years of </span>
+                        <h3 className='text-xl text-secondary font-Yanone-Semibold uppercase tracking-[0.2rem]'>Experience</h3>
+                    </div>
+              
                 </div>
 
             </div>

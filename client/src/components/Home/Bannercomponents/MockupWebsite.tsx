@@ -8,7 +8,7 @@ const MockupWebsite: React.FC<props> = ({ data }) => {
     return (
         <>
 
-            <Link to={`/project`} className='w-full z-20 mt-5 grid grid-cols-12 gap-1 bg-transparent shadow-lg px-5 py-8 rounded-2xl ring-1 ring-Light_primary hover:shadow-xl transition-all duration-300 hover:mb-1 relative'>
+            <Link to={`/project`} className='w-full z-20 mt-5 grid grid-cols-12 gap-1 bg-transparent shadow-lg px-5 py-8 rounded-2xl ring-1 ring-Light_primary hover:shadow-xl transition-all duration-300  relative'>
 
                 {data.images && data.images.map((item, index) => (
                     <div key={index} className='col-span-6 md:col-span-4 flex justify-center bg-white'>

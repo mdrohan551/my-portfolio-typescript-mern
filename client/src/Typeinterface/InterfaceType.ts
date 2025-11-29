@@ -79,3 +79,55 @@ export interface TestimonialLink {
   largeText: string;
   icon?: React.ComponentType | boolean | null;
 }
+
+
+// footer interface 
+
+
+
+export interface SocialLink {
+  name: string;
+  url: string;
+  // React-icons ব্যবহারের জন্য React.ComponentType
+  icon: React.ComponentType<{ className?: string }>;
+}
+
+export interface NavLink {
+  link: string;
+  label: string;
+}
+
+export interface FooterData {
+  logoText: string;
+  cta: {
+    iconPlaceholder: React.ComponentType<{ className?: string }>;
+    title: string;
+    subtitle: string;
+    buttonText: string;
+    buttonLink: string;
+  };
+  navigation: NavLink[];
+  socialLinks: SocialLink[];
+}
+
+export interface FooterProps {
+  data: FooterData;
+}
+
+// footer map 
+export interface MapData {
+  title: string;
+  mapLink: string; // Google map embed link
+  image: string;
+}
+
+
+// work project mockup 
+export interface ProjectCard {
+  id: number;
+  title: string;
+  slug: string;
+  image: string;
+  category: "design" | "api" | "inventory" | "ecommerce";
+  showIcon?: boolean;
+}

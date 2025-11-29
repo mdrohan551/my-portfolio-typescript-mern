@@ -5,7 +5,7 @@ import RouterChangeLineAnimation from './RouterChangeLineAnimation'
 import MasterLayout from '../Layout/NavLayout/MasterLayout'
 import HomePage from '../pages/HomePage'
 import NotFound from '../Layout/NotFound'
-import Projects from '../components/project/Projects'
+import ProjectPage from '../pages/ProjectPage'
 
 
 
@@ -17,7 +17,7 @@ const Routers: React.FC = () => {
             <Routes>
                 <Route path='/' element={<MasterLayout />}>
                     <Route index element={<HomePage />} />
-                    <Route path='project' element={<Projects />} />
+                    <Route path='project' element={<ProjectPage />} />
                 </Route>
                 <Route path="*" element={<NotFound />} />
             </Routes>

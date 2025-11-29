@@ -2,7 +2,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import HomeBanner from '../components/Home/HomeBanner';
 import HomeSidebar from '../components/Home/HomeSidebar';
-import { homeBannerData, sideBarBannerData } from '../constants/Data/data';
+import { homeBannerData, mydata } from '../constants/Data/data';
+import ProjectMockup from '../components/Home/HomeProject/ProjectMockup';
 
 const HomePage: React.FC = () => {
     return (
@@ -18,10 +19,14 @@ const HomePage: React.FC = () => {
             {/* Page content */}
             <div className="grid grid-cols-12 container mx-auto gap-5 px-2 pt-10">
                 <div className="col-span-12 md:col-span-5 lg:col-span-3">
-                    <HomeSidebar data={sideBarBannerData} />
+                    <HomeSidebar data={mydata} />
                 </div>
                 <div className="col-span-12 md:col-span-9">
                     <HomeBanner data={homeBannerData} />
+                </div>
+                <div className="col-span-12">
+
+                <ProjectMockup />
                 </div>
             </div>
         </>

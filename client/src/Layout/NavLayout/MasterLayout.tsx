@@ -6,6 +6,7 @@ import { Outlet } from 'react-router-dom'
 import Footer from './Footer'
 import { userRole } from '../../constants/demouser/User'
 import type { MasterLayoutProps } from '../../Typeinterface/InterfaceType'
+import { mockFooterData } from '../../constants/Data/data'
 
 const MasterLayout: React.FC<MasterLayoutProps> = ({ children, hideFooter = false, className = "" }) => {
     const role = userRole.role
@@ -19,7 +20,7 @@ const MasterLayout: React.FC<MasterLayoutProps> = ({ children, hideFooter = fals
                 {/* children pass jsx components or outlet pass nested routes  */}
                 {children ? children : <Outlet />}
             </main>
-            {!hideFooter && <Footer />}
+            {!hideFooter && <Footer data={mockFooterData} />}
         </div>
     )
 }
